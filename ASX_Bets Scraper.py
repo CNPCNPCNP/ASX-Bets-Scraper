@@ -11,11 +11,11 @@ import datetime as dt
 import string
 from psaw import PushshiftAPI
 
-def __init__():
+def __init__() -> None:
     """Starts the program and will contain test code. """
-    a = submission_id_list(dt.date(2021, 8, 18))
-    b = ticker_mention_counter(a)
-    export_counter(b)
+    a = date_ticker_counter(dt.date(2021, 8, 14), dt.date(2021, 8, 18))
+    export_counter(a)
+    return None
 
 def asx_companies() -> pd.DataFrame:
     """Loads the CSV containing all the ASX listed companies and their share code/name. Returns a dataframe"""
@@ -72,17 +72,34 @@ def ticker_mention_counter(submission_ids: list) -> pd.DataFrame:
         cmts = comment_scrape(submission)
         for comment in cmts:
             fixed_cmt = comment.translate(str.maketrans('', '', string.punctuation)) #strips out all punctuation
-            print (fixed_cmt)
             for i in fixed_cmt.split(): 
                 if len(i) < 6 and i not in banned_list and asx_df['Code'].eq(i).any(): #checks not in banned list first 
                                                                                        #as that is a shorter list                                
                     asx_df.loc[i, 'Count'] += 1
     return asx_df
 
-def export_counter(asx_df: pd.DataFrame, date = dt.date.today()):
+def date_ticker_counter(start_date: dt.date, end_date = dt.date.today()) -> dict:
+    """Takes a start and end date, creates an iterable list of dates inclusive of start and end date. Uses this to 
+    generate a dataframe of ticker mentions for each particular date in the list of dates"""
+    sd = start_date
+    ed = end_date
+    asx_df_dict = {}
+    delta = dt.timedelta(days=1)
+    while sd <= ed:
+        submissions_on_date = submission_id_list(sd, sd) #By checking from start date to start date we check only on
+                                                         #that particular date
+        asx_df = ticker_mention_counter(submissions_on_date).sort_values('Count', ascending = False)
+        asx_df_dict[sd] = asx_df
+        sd += delta
+    return asx_df_dict
+
+def export_counter(asx_df_dict: dict) -> None:
     """Takes a pandas dataframe (ideally after the count of each ticker has been updated) and exports this to a CSV file
     to be viewed/edited further"""
-    sorted_df = asx_df.sort_values('Count', ascending = False)
-    sorted_df.to_csv(r'C:\Users\Clay\Documents\ASX Bets Scraper\companies_counter.csv')
+    for i in asx_df_dict.keys():
+        date = i.strftime('%d_%m_%y')
+        path = r'C:\Users\Clay\Documents\ASX Bets Scraper\companies_counter_'
+        asx_df_dict[i].to_csv(path + date + '.csv')
+    return None
 
 __init__()
