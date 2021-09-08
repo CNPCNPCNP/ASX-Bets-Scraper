@@ -1,6 +1,5 @@
 """
 Created on Thu Sep  2 10:32:05 2021
-
 @author: clayh
 """
 import pandas as pd
@@ -44,15 +43,23 @@ def export_counter(asx_df_dict: dict) -> None:
     return None
 
 def file_name_list_checker() -> list:
-    """Checks the data folder for any asx summary files"""
+    """Checks the data folder for any asx summary files, returns a list giving
+    all the names of these files"""
     summary_list = []
     for file in os.listdir(PATH):
         if file.startswith('summary'):
             summary_list.append(file)
     return summary_list
 
+def df_reader(file_name: str) -> pd.DataFrame:
+    """Takes a file_name specified and returns this dataframe from the data
+    folder"""
+    asx_df = pd.read_csv(PATH + '\\' + file_name, index_col = 0)
+    return asx_df
+
 def asx_summary_reader(files: list):
+    """Takes a list of file names and returns a list of dataframes"""
     df_list = []
-    for i in files:
-        df_list.append = pd.read_csv(PATH + '\\' + i, index_col = 0)
+    for file in files:
+        df_list.append(df_reader(file))
     return df_list
