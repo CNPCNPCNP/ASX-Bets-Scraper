@@ -2,7 +2,6 @@
 Created on Thu Aug 19 10:12:25 2021
 @author: clayh
 """
-
 import praw
 import matplotlib as plt
 import pandas as pd
@@ -13,14 +12,17 @@ from psaw import PushshiftAPI
 
 def main() -> None:
     """Starts the program and will contain test code. """
-    list_update = True
+    list_update = False
     if list_update:
-        date1, date2 = (dt.date(2021, 8, 23), dt.date(2021, 8, 27))
+        date1, date2 = (dt.date(2021, 8, 16), dt.date(2021, 8, 21))
         asx_df_dict = date_ticker_counter(date1, date2)
         export_counter(asx_df_dict)
         summary_asx_df = summary_asx_data(asx_df_dict)
         export_df_summary(summary_asx_df, date1, date2)
-    df_list = asx_summary_reader(file_name_list_checker())
+    summaries = file_name_list_checker()
+    print(summaries)
+    a = asx_summary_reader(summaries)
+    print(a)
 
 def asx_companies() -> pd.DataFrame:
     """Loads the CSV containing all the ASX listed companies and their share 
@@ -87,13 +89,13 @@ def ticker_mention_counter(submission_ids: list) -> pd.DataFrame:
     for submission in submission_ids:
         cmts = comment_scrape(submission)
         for comment in cmts:
-            fixed_cmt = comment.translate(str.maketrans('', '', string.punctuation)) #strips out all punctuation
+            #strips out all punctuation
+            fixed_cmt = comment.translate(str.maketrans('', '', string.punctuation)) 
             for i in fixed_cmt.split(): 
+                #checks not in banned list first as that is shorter list and 
+                #python is lazy
                 if len(i) < 6 and i not in banned_list \
-                              and asx_df['Code'].eq(i).any(): #checks not in 
-                                                              #banned list first 
-                                                              #as that is a 
-                                                              #shorter list                                
+                              and asx_df['Code'].eq(i).any(): 
                     asx_df.loc[i, 'Count'] += 1
     return asx_df
 
@@ -106,10 +108,8 @@ def date_ticker_counter(start_date: dt.date, end_date = dt.date.today()) -> dict
     asx_df_dict = {}
     delta = dt.timedelta(days=1)
     while sd <= ed:
-        submissions_on_date = submission_id_list(sd, sd) #By checking from 
-                                                         #start date to start 
-                                                         #date we check only on
-                                                         #that particular date
+        #By checking from start date to start date we check only on that date
+        submissions_on_date = submission_id_list(sd, sd) 
         asx_df = ticker_mention_counter(submissions_on_date)
         asx_df_dict[sd] = asx_df
         sd += delta
@@ -135,4 +135,3 @@ def summary_asx_data(asx_df_dict: dict) -> pd.DataFrame:
 
 if __name__ == '__main__':
     main()
-    
