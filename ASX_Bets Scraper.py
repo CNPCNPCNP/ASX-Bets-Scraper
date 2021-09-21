@@ -1,99 +1,137 @@
 """
-Created on Thu Sep  2 10:32:05 2021
+Created on Thu Aug 19 10:12:25 2021
 @author: clayh
 """
+import praw
+import matplotlib as plt
 import pandas as pd
 import datetime as dt
-import os
+import string
+from data_viewer import *
+from psaw import PushshiftAPI
 
-#Global variable for the data folder path as we re-use it a lot, and it should
-#never change
-PATH = os.path.dirname(__file__) + '\\data'
+def main() -> None:
+    """Starts the program and will contain test code. """
+    list_update = True
+    if list_update:
+        date1, date2 = (dt.date(2021, 9, 13), dt.date(2021, 9, 17))
+        asx_df_dict = date_ticker_counter(date1, date2)
+        export_counter(asx_df_dict)
+        summary_asx_df = summary_asx_data(asx_df_dict)
+        export_df_summary(summary_asx_df, date1, date2)
+    a = flat_summary()
+    print(a)
+    plot_asx_summary_data(a)
 
-def plot_asx_summary_data(asx_df: pd.DataFrame) -> None:
-    """Takes a summary dataframe and plots ticker mentions over time. Filters 
-    out tickers that aren't mentioned at all"""
-    new_df = collapse_full_df(asx_df)
-    print(new_df)
-    new_df.plot(kind = 'line')
-    return None
+def asx_companies() -> pd.DataFrame:
+    """Loads the CSV containing all the ASX listed companies and their share 
+    code/name. Returns a dataframe"""
+    asx_companies = pd.read_csv('companies.csv', index_col = 0)
+    return asx_companies
 
-def collapse_full_df(asx_df: pd.DataFrame) -> pd.DataFrame:
-    """Takes a summary dataframe and deletes all the entries which have 0
-    mentions over the time period
-    for column in asx_df.columns:
-        if asx_df[column].all() == 0:
-            asx_df.drop(labels = column, axis = 1, inplace = True)
-            """
-    asx_df = asx_df.loc[:,~(asx_df == 0).all(axis = 0)]
+def reddit():
+    """Contains the data from my reddit application that allows me to scrape 
+    data using reddit's inbuilt API. It returns my login details which can be 
+    accessed by other functions"""
+    reddit = praw.Reddit(client_id='hRX-iBVQQJ02lMhEYRMEfA', 
+                         client_secret='gfr8A7RqQ8ZSBr8mBkZIXkS9LePUnQ', 
+                         user_agent='clay_scraper')
+    return reddit
+
+def submission_id_list(start_date: dt.date, end_date = dt.date.today()) -> list:
+    """Takes a start date, returns all the needed post ids from the pre-market,
+    daily discussion and weekend discussion from the reddit automoderator who 
+    posts them on ASX_bets after this date. First creates a generator object
+    which we then convert into a list. Elements of the list can then be fed 
+    into comment_scrape as needed. Can take optional argument of end date to 
+    find submissions between certain dates, otherwise this defaults to today. 
+    Returns the list, as well as the start and end dates used. 
+    
+    Uses the pushshift wrapper psaw to accomplish this as the basic reddit API 
+    does not have these features"""
+    submission_list = []
+    day_s, month_s, year_s = start_date.day, start_date.month, start_date.year
+    end_date += dt.timedelta(1) #This is done because the list is not inclusive 
+                                #of today's date, 
+                                #ends on beginning of next day
+    day_f, month_f, year_f = end_date.day, end_date.month, end_date.year 
+    #Dirty hack because I suck at datetime
+    start_epoch = int(dt.datetime(year_s, month_s, day_s).timestamp())
+    end_epoch = int(dt.datetime(year_f, month_f, day_f).timestamp())
+    api = PushshiftAPI(reddit())
+    submission_ids = api.search_submissions(after = start_epoch, 
+                                 before = end_epoch,
+                                 subreddit = 'asx_bets',
+                                 #author = 'AutoModerator',
+                                 limit=1000)
+    for i in submission_ids:
+        submission_list.append(i)
+    print (submission_list)
+    return(submission_list)
+    
+def comment_scrape(post_id: str) -> list:
+    """Takes a post_id as a string and returns a full list of all the comments
+    in a post"""
+    comment_list = []
+    submission = reddit().submission(id=post_id)
+    submission.comments.replace_more(limit=0) #replace_more method means that 
+                                              #all top level comments are accessed
+    for comment in submission.comments.list(): #list method takes lower level 
+                                               #comments as well
+        comment_list.append(comment.body)
+    return comment_list
+
+def ticker_mention_counter(submission_ids: list) -> pd.DataFrame:
+    """Takes a list of submission ids, creates a dataframe containing tickers 
+    and how many times they were mentioned"""
+    asx_df = asx_companies()
+    banned_list = ('ATH', 'ATM', 'BUY', 'ASX', 'ETF')
+    for submission in submission_ids:
+        cmts = comment_scrape(submission)
+        for comment in cmts:
+            #strips out all punctuation
+            fixed_cmt = comment.translate(str.maketrans('', '', string.punctuation)) 
+            for word in fixed_cmt.split(): 
+                #checks not in banned list first as that is shorter list and 
+                #python is lazy
+                if (len(word) < 6 and word not in banned_list 
+                               and asx_df['Code'].eq(word).any()): 
+                    asx_df.loc[word, 'Count'] += 1
     return asx_df
 
-def export_df_summary(asx_df_summary: pd.DataFrame, start_date, end_date) -> None:
-    start_date = start_date.strftime('%d_%m_%y')
-    end_date = end_date.strftime('%d_%m_%y')
-    title = 'summary_'
-    asx_df_summary.to_csv(os.path.join(PATH, title + start_date + '-' + 
-                                       end_date + '.csv'))
-    
-def export_counter(asx_df_dict: dict) -> None:
-    """Takes a pandas dataframe (ideally after the count of each ticker has 
-    been updated) and exports this to a CSV file to be viewed/edited further"""
-    for i in asx_df_dict.keys():
-        date = i.strftime('%d_%m_%y')
-        title = 'companies_counter_'
-        asx_df_dict[i].to_csv(os.path.join(PATH, title + date + '.csv'))
-    return None
+def date_ticker_counter(start_date: dt.date, end_date = dt.date.today()) -> dict:
+    """Takes a start and end date, creates an iterable list of dates inclusive 
+    of start and end date. Uses this to generate a dataframe of ticker mentions
+    for each particular date in the list of dates. Returns this as a dict"""
+    sd = start_date
+    ed = end_date
+    asx_df_dict = {}
+    delta = dt.timedelta(days=1)
+    while sd <= ed:
+        #By checking from start date to start date we check only on that date
+        submissions_on_date = submission_id_list(sd, sd) 
+        asx_df = ticker_mention_counter(submissions_on_date)
+        asx_df_dict[sd] = asx_df
+        sd += delta
+    return asx_df_dict
 
-def file_name_list_checker() -> list:
-    """Checks the data folder for any asx summary files, returns a list giving
-    all the names of these files"""
-    summary_list = []
-    for file in os.listdir(PATH):
-        if file.startswith('summary'):
-            summary_list.append(file)
-    return summary_list
+def summary_asx_data(asx_df_dict: dict) -> pd.DataFrame:
+    """Takes a dictionary of dates vs asx ticker count dataframes from that day. 
+    Returns a single dataframe that contains every ticker and the number of 
+    mentions on each date"""
+    data_list = []
+    dataframe_length = len(asx_companies().index)
+    row_dates = asx_df_dict.keys()
+    tickers = list(asx_companies().index)
+    for asx_df in asx_df_dict.values():
+        count = 0
+        value_list = []
+        while count < dataframe_length:
+            value_list.append(asx_df.iat[count, 2])
+            count += 1
+        data_list.append(value_list)
+    summary_asx_df = pd.DataFrame(data_list, index = row_dates, columns = tickers)
+    return summary_asx_df
 
-def df_reader(file_name: str) -> pd.DataFrame:
-    """Takes a file_name specified and returns this dataframe from the data
-    folder"""
-    asx_df = pd.read_csv(PATH + '\\' + file_name, index_col = 0)
-    return asx_df
-
-def date_grabber(file_name: str) -> dt.datetime:
-    """Subroutine for asx_summary_reader functionakes a file name for a summary 
-    dataframe and grabs the start date of the summary"""
-    date = file_name.strip('summary_')[:8]
-    date = dt.datetime.strptime(date, '%d_%m_%y').date()
-    return date
-
-def asx_summary_reader(files: list) -> dict:
-    """Takes a list of file names and returns a dictionary of start date and
-    summary dataframes"""
-    df_list = {}
-    for file in files:
-        df_list[date_grabber(file)] = df_reader(file)
-    return df_list
-
-def flat_summary(start_date = dt.date(2021, 8, 16), end_date = dt.date.today()) -> pd.DataFrame:
-    """Takes two dates, and returns a dataframe which first concatenates then
-    removes all extraneous rows from the dataset
-    
-    Keyword arguments default this function to get every single date, however
-    can be specified by user if needed"""
-    new_df_list = []
-    
-    #Create our list of dataframes to merge together, then merge them
-    full_df_list = asx_summary_reader(file_name_list_checker())
-    for df in full_df_list:
-        print (start_date, df, end_date)
-        if start_date <= df <= end_date:
-            new_df_list.append(full_df_list[df])
-    new_df = pd.concat(new_df_list)
-    
-    #Take merged dataframe, sort it by date and delete empty rows
-    new_df = new_df.sort_index()
-    #~(new_df == 0) creates a boolean dataframe when all values in column are 0
-    new_df = collapse_full_df(new_df)
-    #new_df = new_df.loc[:,~(new_df == 0).all(axis = 0)]
-    
-    return new_df
+if __name__ == '__main__':
+    main()
