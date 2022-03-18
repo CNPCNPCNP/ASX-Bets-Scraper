@@ -16,7 +16,6 @@ def plot_asx_summary_data(asx_df: pd.DataFrame) -> None:
     new_df = collapse_full_df(asx_df)
     print(new_df)
     new_df.plot(kind = 'line')
-    return None
 
 def collapse_full_df(asx_df: pd.DataFrame) -> pd.DataFrame:
     """Takes a summary dataframe and deletes all the entries which have 0
@@ -42,7 +41,6 @@ def export_counter(asx_df_dict: dict) -> None:
         date = i.strftime('%d_%m_%y')
         title = 'companies_counter_'
         asx_df_dict[i].to_csv(os.path.join(PATH, title + date + '.csv'))
-    return None
 
 def file_name_list_checker() -> list:
     """Checks the data folder for any asx summary files, returns a list giving

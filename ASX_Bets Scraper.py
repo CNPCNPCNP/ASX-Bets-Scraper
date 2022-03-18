@@ -7,6 +7,7 @@ import matplotlib as plt
 import pandas as pd
 import datetime as dt
 import string
+import config
 from data_viewer import *
 from psaw import PushshiftAPI
 
@@ -14,7 +15,7 @@ def main() -> None:
     """Starts the program and will contain test code. """
     list_update = True
     if list_update:
-        date1, date2 = (dt.date(2021, 9, 13), dt.date(2021, 9, 17))
+        date1, date2 = (dt.date(2021, 9, 13), dt.date(2021, 9, 15))
         asx_df_dict = date_ticker_counter(date1, date2)
         export_counter(asx_df_dict)
         summary_asx_df = summary_asx_data(asx_df_dict)
@@ -33,9 +34,10 @@ def reddit():
     """Contains the data from my reddit application that allows me to scrape 
     data using reddit's inbuilt API. It returns my login details which can be 
     accessed by other functions"""
-    reddit = praw.Reddit(client_id='hRX-iBVQQJ02lMhEYRMEfA', 
-                         client_secret='gfr8A7RqQ8ZSBr8mBkZIXkS9LePUnQ', 
-                         user_agent='clay_scraper')
+    reddit = praw.Reddit(client_id = config.client_id, 
+                         client_secret = config.client_secret, 
+                         user_agent = config.user_agent,
+                         check_for_async = False)
     return reddit
 
 def submission_id_list(start_date: dt.date, end_date = dt.date.today()) -> list:
