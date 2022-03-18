@@ -12,11 +12,26 @@ from psaw import PushshiftAPI
 
 def main() -> None:
     """Starts the program and will contain test code. """
-    listUpdate = input('What dates do you want to scrape? ')
+    listUpdate = None
+
+    while not listUpdate:
+        listUpdate = input('Do you want to display data or scrape new data?' +
+                            ' y for yes, n for no: ')
+        if listUpdate in ['y', 'Y']:
+            listUpdate = True
+        elif listUpdate in ['n', 'N']:
+            listUpdate = False
+        else:
+            listUpdate = None
     
-    listUpdate = False
     if listUpdate:
-        date1, date2 = (dt.date(2021, 9, 13), dt.date(2021, 9, 15))
+        date1 = input('Please enter the date you want to start scraping ' +
+                    'from in DD/MM/YYYY format: ')
+        date1 = dt.datetime.strptime(date1, "%d/%m/%Y").date()
+        date2 = input('Please enter the date you want to stop scraping at' +
+                    ' in DD/MM/YYYY format: ')
+        date2 = dt.datetime.strptime(date2, "%d/%m/%Y").date()
+        #date1, date2 = (dt.date(2021, 9, 13), dt.date(2021, 9, 15))
         asx_df_dict = dateTickerCounter(date1, date2)
         export_counter(asx_df_dict)
         summary_asx_df = summary_asx_data(asx_df_dict)
