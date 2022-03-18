@@ -2,7 +2,7 @@
 14D,14D,1414 Degrees Ltd,0
 1ST,1ST,1ST Group Ltd,0
 3PL,3PL,3P Learning Ltd,0
-4DS,4DS,4DS Memory Ltd,1
+4DS,4DS,4DS Memory Ltd,0
 5GN,5GN,5G Networks Ltd,0
 88E,88E,88 Energy Ltd,0
 8CO,8CO,8COMMON Ltd,0
@@ -26,8 +26,8 @@ AD1,AD1,AD1 Holdings Ltd,0
 ADA,ADA,Adacel Technologies Ltd,0
 ADH,ADH,Adairs Ltd,0
 1AD,1AD,Adalta Ltd,0
-ADD,ADD,Adavale Resources Ltd,3
-ABC,ABC,Adelaide Brighton Ltd,2
+ADD,ADD,Adavale Resources Ltd,1
+ABC,ABC,Adelaide Brighton Ltd,1
 ADR,ADR,Adherium Ltd,0
 AHZ,AHZ,Admedus Ltd,0
 ADY,ADY,Admiralty Resources NL,0
@@ -43,7 +43,7 @@ AFR,AFR,African Energy Resources Ltd,0
 A1G,A1G,African Gold Ltd,0
 AFT,AFT,AFT Corporation Ltd,0
 AFP,AFP,Aft Pharmaceuticals Ltd,0
-AGL,AGL,AGL Energy Ltd,2
+AGL,AGL,AGL Energy Ltd,1
 AGJ,AGJ,Agricultural Land Trust,0
 AGR,AGR,Aguia Resources Ltd,0
 AHL,AHL,Ahalife Holdings Ltd,0
@@ -52,7 +52,7 @@ AGI,AGI,Ainsworth Game Technology Ltd,0
 A40,A40,Alita Resources Ltd,0
 AHQ,AHQ,Allegiance Coal Ltd,0
 AGS,AGS,Alliance Resources Ltd,0
-AGE,AGE,Alligator Energy Ltd,5
+AGE,AGE,Alligator Energy Ltd,1
 A4N,A4N,Alpha Hpa Ltd,0
 1AG,1AG,Alterra Ltd,0
 AGH,AGH,Althea Group Holdings Ltd,0
@@ -95,10 +95,10 @@ AGVT,AGVT,Betashares Australian Government Bond ETF,0
 AAA,AAA,Betashares Australian High Interest Cash ETF,0
 ACDC,ACDC,ETFs Battery Tech & Lithium ETF,0
 4CE,4CE,Force Commodities Ltd,0
-360,360,LIFE360 Inc,1
+360,360,LIFE360 Inc,0
 1AL,1AL,Oneall International Ltd,0
 3DP,3DP,Pointerra Ltd,0
-A2M,A2M,The a2 Milk Company Ltd,1
+A2M,A2M,The a2 Milk Company Ltd,0
 2BE,2BE,Tubi Ltd,0
 AIB,AIB,Aurora Global Income Trust,0
 AIQ,AIQ,Alternative Investment Trust,0
@@ -125,7 +125,7 @@ ALF,ALF,Australian Leaders Fund Ltd,0
 ALG,ALG,Ardent Leisure Group Ltd,0
 ALI,ALI,Argo Global Listed Infrastructure Ltd,0
 ALK,ALK,Alkane Resources Ltd,0
-ALL,ALL,Aristocrat Leisure Ltd,3
+ALL,ALL,Aristocrat Leisure Ltd,2
 ALQ,ALQ,Als Ltd,0
 ALT,ALT,Analytica Ltd,0
 ALU,ALU,Altium Ltd,0
@@ -205,7 +205,7 @@ ASB,ASB,Austal Ltd,0
 ASG,ASG,Autosports Group Ltd,0
 ASH,ASH,Ashley Services Group Ltd,1
 ASIA,ASIA,Betashares Asia Technology Tigers ETF,1
-ASN,ASN,Anson Resources Ltd,12
+ASN,ASN,Anson Resources Ltd,11
 ASP,ASP,Aspermont Ltd,0
 ASQ,ASQ,Australian Silica Quartz Group Ltd,0
 AST,AST,Ausnet Services Ltd,0
@@ -244,7 +244,7 @@ AVE,AVE,Avecho Biotechnology Ltd,0
 AVG,AVG,Australian Vintage Ltd,0
 AVH,AVH,Avita Medical Ltd,0
 AVJ,AVJ,Avjennings Ltd,0
-AVL,AVL,Australian Vanadium Ltd,1
+AVL,AVL,Australian Vanadium Ltd,0
 AVN,AVN,Aventus Group,0
 AVQ,AVQ,Axiom Mining Ltd,0
 AVW,AVW,Avira Resources Ltd,0
@@ -332,7 +332,7 @@ BLY,BLY,Boart Longyear Ltd,0
 BLZ,BLZ,BLAZE International Ltd,0
 BMG,BMG,BMG Resources Ltd,0
 BMH,BMH,Baumart Holdings Ltd,0
-BMN,BMN,Bannerman Resources Ltd,10
+BMN,BMN,Bannerman Resources Ltd,5
 BNDS,BNDS,Betashares Legg Mason Australian Bond Fund (Managed Fund),0
 BNKS,BNKS,Betashares Global Banks ETF - Currency Hedged,0
 BNL,BNL,Big Star Energy Ltd,1
@@ -340,21 +340,21 @@ BNO,BNO,Bionomics Ltd,0
 BNR,BNR,Bulletin Resources Ltd,0
 BOA,BOA,Boadicea Resources Ltd,0
 BOC,BOC,Bougainville Copper Ltd,0
-BOE,BOE,Boss Resources Ltd,19
+BOE,BOE,Boss Resources Ltd,12
 BOL,BOL,Boom Logistics Ltd,0
 BOND,BOND,SPDR S&P/ASX Australian Bond Fund,0
 BOQ,BOQ,Bank of Queensland Ltd,0
 BOT,BOT,Botanix Pharmaceuticals Ltd,0
 BPH,BPH,BPH Energy Ltd,0
-BPL,BPL,Broken Hill Prospecting Ltd,2
+BPL,BPL,Broken Hill Prospecting Ltd,0
 BPP,BPP,Babylon Pump & Power Ltd,0
 BPT,BPT,Beach Energy Ltd,0
 BRB,BRB,Breaker Resources NL,0
 BRG,BRG,Breville Group Ltd,0
 BRI,BRI,Big River Industries Ltd,0
-BRK,BRK,Brookside Energy Ltd,4
+BRK,BRK,Brookside Energy Ltd,3
 BRL,BRL,Bathurst Resources Ltd,0
-BRN,BRN,Brainchip Holdings Ltd,1
+BRN,BRN,Brainchip Holdings Ltd,0
 BRU,BRU,Buru Energy Ltd,0
 BRV,BRV,Big River Gold Ltd,0
 BSA,BSA,BSA Ltd,0
@@ -422,7 +422,7 @@ CDD,CDD,Cardno Ltd,0
 CDH,CDH,Chongherr Investments Ltd,0
 CDM,CDM,Cadence Capital Ltd,0
 CDP,CDP,Carindale Property Trust,0
-CDT,CDT,Castle Minerals Ltd,1
+CDT,CDT,Castle Minerals Ltd,0
 CDV,CDV,Cardinal Resources Ltd,0
 CDX,CDX,Cardiex Ltd,0
 CDY,CDY,Cellmid Ltd,0
@@ -457,7 +457,7 @@ CINPA,CINPA,Carlton Investments Ltd,0
 CIO,CIO,Connected Io Ltd,0
 CIP,CIP,Centuria Industrial REIT,0
 CIW,CIW,Clime Investment Management Ltd,0
-CKA,CKA,Cokal Ltd,1
+CKA,CKA,Cokal Ltd,0
 CKF,CKF,Collins Foods Ltd,0
 CL1,CL1,Class Ltd,0
 CL8,CL8,Collaborate Corporation Ltd,0
@@ -487,7 +487,7 @@ CNJ,CNJ,Conico Ltd,0
 CNL,CNL,Celamin Holdings Ltd,0
 CNU,CNU,Chorus Ltd,0
 CNW,CNW,Cirrus Networks Holdings Ltd,0
-COB,COB,Cobalt Blue Holdings Ltd,1
+COB,COB,Cobalt Blue Holdings Ltd,0
 COE,COE,Cooper Energy Ltd,0
 COF,COF,Centuria Office REIT,0
 COG,COG,Consolidated Operations Group Ltd,0
@@ -538,7 +538,7 @@ CVF,CVF,Contrarian Value Fund Ltd,0
 CVL,CVL,Civmec Ltd,0
 CVN,CVN,Carnarvon Petroleum Ltd,0
 CVS,CVS,Cervantes Corporation Ltd,0
-CVV,CVV,Caravel Minerals Ltd,1
+CVV,CVV,Caravel Minerals Ltd,0
 CVW,CVW,Clearview Wealth Ltd,0
 CWL,CWL,Chant West Holdings Ltd,0
 CWN,CWN,Crown Resorts Ltd,0
@@ -548,7 +548,7 @@ CWY,CWY,Cleanaway Waste Management Ltd,0
 CWZ,CWZ,Cashwerkz Ltd,0
 CXL,CXL,CALIX Ltd,4
 CXM,CXM,Centrex Metals Ltd,0
-CXO,CXO,Core Lithium Ltd,5
+CXO,CXO,Core Lithium Ltd,3
 CXU,CXU,Cauldron Energy Ltd,0
 CXX,CXX,Cradle Resources Ltd,0
 CXZ,CXZ,Connexion Telematics Ltd,0
@@ -580,7 +580,7 @@ DDR,DDR,Dicker Data Ltd,0
 DDT,DDT,Datadot Technology Ltd,0
 DEG,DEG,De Grey Mining Ltd,0
 DEM,DEM,De.Mem Ltd,0
-DEV,DEV,DEVEX Resources Ltd,1
+DEV,DEV,DEVEX Resources Ltd,0
 DFM,DFM,Dongfang Modern Agriculture Holding Group Ltd,0
 DGGF,DGGF,Betashares Diversified Growth ETF,0
 DGH,DGH,Desane Group Holdings Ltd,0
@@ -593,7 +593,7 @@ DIV,DIV,Ubs IQ Morningstar Australia Dividend Yield ETF,0
 DJRE,DJRE,SPDR Dow Jones Global Real Estate Fund,0
 DJW,DJW,Djerriwarrh Investments Ltd,0
 DKM,DKM,Duketon Mining Ltd,0
-DLC,DLC,Delecta Ltd,9
+DLC,DLC,Delecta Ltd,7
 DME,DME,Dome Gold Mines Ltd,0
 DMG,DMG,Dragon Mountain Gold Ltd,0
 DMKT,DMKT,AMP Capital Dynamic Markets Fund (Hedge Fund),0
@@ -618,12 +618,12 @@ DUB,DUB,Dubber Corporation Ltd,0
 DUI,DUI,Diversified United Investment Ltd,0
 DVL,DVL,Dorsavi Ltd,0
 DVN,DVN,Devine Ltd,0
-DW8,DW8,Digital Wine Ventures Ltd,37
+DW8,DW8,Digital Wine Ventures Ltd,29
 DWS,DWS,DWS Ltd,0
 DXB,DXB,Dimerix Ltd,1
 DXN,DXN,DXN Ltd,0
 DXS,DXS,Dexus,0
-DYL,DYL,Deep Yellow Ltd,7
+DYL,DYL,Deep Yellow Ltd,5
 DZZF,DZZF,Betashares Diversified Conservative Income ETF,0
 E25,E25,Element 25 Ltd,0
 E2E,E2E,Eon NRG Ltd,0
@@ -676,7 +676,7 @@ EM1,EM1,Emerge Gaming Ltd,0
 EM2,EM2,Eagle Mountain Mining Ltd,0
 EMB,EMB,Embelton Ltd,0
 EMD,EMD,Emerald Clinics Ltd,0
-EME,EME,Energy Metals Ltd,1
+EME,EME,Energy Metals Ltd,0
 EMH,EMH,European Metals Holdings Ltd,0
 EMKT,EMKT,Vaneck Vectors MSCI Multifactor Emerging Markets Equity ETF,0
 EML,EML,EML Payments Ltd,0
@@ -701,7 +701,7 @@ EOL,EOL,Energy One Ltd,0
 EOR,EOR,EOR Group Ltd,0
 EOS,EOS,Electro Optic Systems Holdings Ltd,1
 EPD,EPD,Empired Ltd,0
-EPM,EPM,Eclipse Metals Ltd,1
+EPM,EPM,Eclipse Metals Ltd,0
 EQE,EQE,EQUUS Mining Ltd,0
 EQT,EQT,EQT Holdings Ltd,0
 EQX,EQX,Equatorial Resources Ltd,0
@@ -746,7 +746,7 @@ FAM,FAM,Family Insights Group Ltd,0
 FANG,FANG,ETFs Fang+ ETF,0
 FAR,FAR,FAR Ltd,0
 FAU,FAU,First Au Ltd,0
-FBR,FBR,FBR Ltd,1
+FBR,FBR,FBR Ltd,0
 FBU,FBU,Fletcher Building Ltd,0
 FCG,FCG,Frontier Capital Group Ltd,0
 FCL,FCL,Fineos Corporation Holdings Plc,0
@@ -769,7 +769,7 @@ FGO,FGO,Flamingo Ai Ltd,0
 FGR,FGR,First Graphene Ltd,0
 FGX,FGX,Future Generation Investment Company Ltd,0
 FHS,FHS,Freehill Mining Ltd,0
-FID,FID,Fiducian Group Ltd,1
+FID,FID,Fiducian Group Ltd,0
 FIG,FIG,Freedom Insurance Group Ltd,0
 FIJ,FIJ,Fiji Kava Ltd,0
 FIN,FIN,FIN Resources Ltd,0
@@ -778,13 +778,13 @@ FLN,FLN,Freelancer Ltd,0
 FLOT,FLOT,Vaneck Vectors Australian Floating Rate ETF,0
 FLT,FLT,Flight Centre Travel Group Ltd,0
 FMG,FMG,Fortescue Metals Group Ltd,9
-FML,FML,Focus Minerals Ltd,2
+FML,FML,Focus Minerals Ltd,0
 FMS,FMS,Flinders Mines Ltd,0
 FNP,FNP,Freedom Foods Group Ltd,0
 FNT,FNT,Frontier Resources Ltd,0
 FOD,FOD,The Food Revolution Group Ltd,0
 FOOD,FOOD,Betashares Global Agriculture ETF - Currency Hedged,0
-FOR,FOR,Forager Australian Shares Fund,1
+FOR,FOR,Forager Australian Shares Fund,0
 FPC,FPC,Fat Prophets Global Contrarian Fund Ltd,0
 FPH,FPH,Fisher & Paykel Healthcare Corporation Ltd,0
 FPL,FPL,Fremont Petroleum Corporation Ltd,0
@@ -834,14 +834,14 @@ GEV,GEV,Global Energy Ventures Ltd,0
 GFI,GFI,Global Fortune Investment Ltd,0
 GFL,GFL,Global Masters Fund Ltd,0
 GGE,GGE,Grand Gulf Energy Ltd,0
-GGG,GGG,Greenland Minerals Ltd,1
+GGG,GGG,Greenland Minerals Ltd,0
 GGUS,GGUS,Betashares Geared US EQ FND Currency Hdged HDG FND,0
 GGX,GGX,GAS2GRID Ltd,0
 GIB,GIB,Gibb River Diamonds Ltd,0
 GID,GID,"Gi Dynamics, Inc",0
-GLA,GLA,Gladiator Resources Ltd,4
+GLA,GLA,Gladiator Resources Ltd,2
 GLB,GLB,Globe International Ltd,0
-GLE,GLE,GLG Corp Ltd,1
+GLE,GLE,GLG Corp Ltd,0
 GLH,GLH,Global Health Ltd,0
 GLIN,GLIN,AMP Cap Global Infrastructure Sec Fund,0
 GLL,GLL,Galilee Energy Ltd,0
@@ -856,7 +856,7 @@ GML,GML,Gateway Mining Ltd,0
 GMN,GMN,Gold Mountain Ltd,1
 GMR,GMR,Golden Rim Resources Ltd,0
 GMV,GMV,G Medical Innovations Holdings Ltd,0
-GNC,GNC,Graincorp Ltd,1
+GNC,GNC,Graincorp Ltd,0
 GNE,GNE,Genesis Energy Ltd,0
 GNG,GNG,GR Engineering Services Ltd,0
 GNM,GNM,Great Northern Minerals Ltd,0
@@ -886,7 +886,7 @@ GTE,GTE,Great Western Exploration Ltd,0
 GTG,GTG,Genetic Technologies Ltd,0
 GTK,GTK,Gentrack Group Ltd,0
 GTN,GTN,GTN Ltd,0
-GTR,GTR,Gti Resources Ltd,7
+GTR,GTR,Gti Resources Ltd,5
 GUD,GUD,G.U.D. Holdings Ltd,0
 GUL,GUL,Gullewa Ltd,0
 GVF,GVF,Global Value Fund Ltd,0
@@ -924,7 +924,7 @@ HMD,HMD,Heramed Ltd,0
 HMO,HMO,Hearmeout Ltd,0
 HMX,HMX,Hammer Metals Ltd,0
 HNG,HNG,HGL Ltd,0
-HNR,HNR,Hannans Ltd,5
+HNR,HNR,Hannans Ltd,1
 HOG,HOG,Hawkley Oil and Gas Ltd,0
 HOR,HOR,Horseshoe Metals Ltd,0
 HOT,HOT,Hotcopper Holdings Ltd,0
@@ -933,7 +933,7 @@ HPR,HPR,High Peak Royalties Ltd,0
 HRL,HRL,HRL Holdings Ltd,0
 HRN,HRN,Horizon Gold Ltd,0
 HRR,HRR,Heron Resources Ltd,0
-HRZ,HRZ,Horizon Minerals Ltd,1
+HRZ,HRZ,Horizon Minerals Ltd,0
 HSC,HSC,Homestay Care Ltd,0
 HSN,HSN,Hansen Technologies Ltd,0
 HT1,HT1,HT&E Ltd,0
@@ -958,8 +958,8 @@ IAG,IAG,Insurance Australia Group Ltd,0
 IAM,IAM,Intiger Group Ltd,0
 IAP,IAP,Investec Australia Property Fund,0
 IBC,IBC,Ironbark Capital Ltd,0
-IBG,IBG,Ironbark ZINC Ltd,9
-IBX,IBX,Imagion Biosystems Ltd,3
+IBG,IBG,Ironbark ZINC Ltd,7
+IBX,IBX,Imagion Biosystems Ltd,1
 ICE,ICE,Icetana Ltd,0
 ICG,ICG,Inca Minerals Ltd,0
 ICI,ICI,Icandy Interactive Ltd,0
@@ -987,12 +987,12 @@ IGB,IGB,Ishares Treasury ETF,0
 IGE,IGE,Integrated Green Energy Solutions Ltd,0
 IGL,IGL,Ive Group Ltd,0
 IGN,IGN,Ignite Ltd,0
-IGO,IGO,IGO Ltd,1
+IGO,IGO,IGO Ltd,0
 IHCB,IHCB,Ishares Core Global Corporate Bond(Aud Hedged) ETF,0
 IHD,IHD,Ishares S&P/ASX Dividend Opportunities ETF,0
 IHEB,IHEB,Ishares JP Morgan Usd Emerging MKT BND Aud HDG ETF,0
 IHHY,IHHY,Ishares Global High Yield Bond (Aud Hedged) ETF,0
-IHL,IHL,Impression Healthcare Ltd,22
+IHL,IHL,Impression Healthcare Ltd,20
 IHOO,IHOO,Ishares Global 100 Aud Hedged ETF,0
 IHR,IHR,Intellihr Ltd,0
 IHVV,IHVV,Ishares S&P 500 Aud Hedged ETF,0
@@ -1015,12 +1015,12 @@ IMM,IMM,Immutep Ltd,0
 IMPQ,IMPQ,Einvest Future Impact Small Caps Fund (Managed Fund),0
 IMR,IMR,"Imricor Medical Systems, Inc",0
 IMS,IMS,Impelus Ltd,0
-IMU,IMU,Imugene Ltd,3
+IMU,IMU,Imugene Ltd,1
 INA,INA,Ingenia Communities Group,0
 INCM,INCM,Betashares Global Income Leaders ETF,0
 INES,INES,Intelligent Investor Ethical Share Fund (Managed Fund),0
 INF,INF,Infinity Lithium Corporation Ltd,1
-ING,ING,Inghams Group Ltd,2
+ING,ING,Inghams Group Ltd,0
 INIF,INIF,Intelligent Investor Aus Equity Income Fund (Managed Fund),0
 INP,INP,Incentiapay Ltd,0
 INR,INR,Ioneer Ltd,2
@@ -1053,13 +1053,13 @@ IVQ,IVQ,Invitrocue Ltd,0
 IVR,IVR,Investigator Resources Ltd,0
 IVT,IVT,Inventis Ltd,0
 IVV,IVV,Ishares S&P 500 ETF,0
-IVX,IVX,Invion Ltd,1
+IVX,IVX,Invion Ltd,0
 IVZ,IVZ,Invictus Energy Ltd,7
 IWLD,IWLD,Ishares Core MSCI World All Cap ETF,0
 IXC,IXC,INVEX Therapeutics Ltd,0
 IXI,IXI,Ishares Global Consumer Staples ETF,0
 IXJ,IXJ,Ishares Global Healthcare ETF,0
-IXR,IXR,Ionic Rare EARTHS Ltd,49
+IXR,IXR,Ionic Rare EARTHS Ltd,47
 IXU,IXU,Ixup Ltd,0
 IZZ,IZZ,Ishares China Large-Cap ETF,0
 JAL,JAL,Jameson Resources Ltd,0
@@ -1083,7 +1083,7 @@ JMS,JMS,Jupiter Mines Ltd,0
 JPR,JPR,Jupiter Energy Ltd,0
 JRL,JRL,Jindalee Resources Ltd,0
 JRV,JRV,Jervois Mining Ltd,2
-JXT,JXT,Jaxsta Ltd,5
+JXT,JXT,Jaxsta Ltd,1
 JYC,JYC,Joyce Corporation Ltd,0
 K2F,K2F,K2FLY Ltd,0
 KAI,KAI,Kairos Minerals Ltd,0
@@ -1106,14 +1106,14 @@ KKC,KKC,KKR Credit Income Fund,0
 KKL,KKL,Kollakorn Corporation Ltd,0
 KKO,KKO,Kinetiko Energy Ltd,0
 KLA,KLA,Kirkland Lake Gold Ltd,0
-KLL,KLL,Kalium Lakes Ltd,1
+KLL,KLL,Kalium Lakes Ltd,0
 KLO,KLO,Kingsland Global Ltd,0
 KLR,KLR,Kaili Resources Ltd,0
 KMD,KMD,Kathmandu Holdings Ltd,0
 KME,KME,Kip Mcgrath Education Centres Ltd,0
 KMT,KMT,Kopore Metals Ltd,0
 KNH,KNH,Koon Holdings Ltd,0
-KNI,KNI,Kuniko Ltd,2
+KNI,KNI,Kuniko Ltd,0
 KNM,KNM,Kneomedia Ltd,0
 KNO,KNO,Knosys Ltd,0
 KOR,KOR,Korab Resources Ltd,0
@@ -1132,7 +1132,7 @@ KSL,KSL,Kina Securities Ltd,0
 KSM,KSM,K2 Australian Small Cap Fund (Hedge Fund),0
 KSN,KSN,Kingston Resources Ltd,0
 KSS,KSS,Kleos Space S.A,0
-KTA,KTA,Krakatoa Resources Ltd,1
+KTA,KTA,Krakatoa Resources Ltd,0
 KTD,KTD,Keytone Dairy Corporation Ltd,0
 KTE,KTE,K2 Energy Ltd,0
 KTG,KTG,K-Tig Ltd,0
@@ -1154,7 +1154,7 @@ LCM,LCM,Logicamms Ltd,0
 LCT,LCT,Living Cell Technologies Ltd,0
 LCY,LCY,Legacy Iron Ore Ltd,0
 LEG,LEG,Legend Mining Ltd,0
-LEL,LEL,Lithium Energy Ltd,2
+LEL,LEL,Lithium Energy Ltd,1
 LEP,LEP,Ale Property Group,0
 LER,LER,Leaf Resources Ltd,0
 LEX,LEX,Lefroy Exploration Ltd,0
@@ -1167,7 +1167,7 @@ LIC,LIC,Lifestyle Communities Ltd,0
 LIN,LIN,Lindian Resources Ltd,0
 LIO,LIO,Lion Energy Ltd,0
 LIT,LIT,Lithium Australia NL,0
-LKE,LKE,Lake Resources N.L.,9
+LKE,LKE,Lake Resources N.L.,8
 LKO,LKO,Lakes Oil NL,0
 LLC,LLC,Lendlease Group,0
 LLO,LLO,Lion One Metals Ltd,0
@@ -1180,9 +1180,9 @@ LNU,LNU,Linius Technologies Ltd,0
 LNY,LNY,Laneway Resources Ltd,0
 LOM,LOM,Lucapa Diamond Company Ltd,0
 LON,LON,Longtable Group Ltd,0
-LOT,LOT,Lotus Resources Ltd,13
+LOT,LOT,Lotus Resources Ltd,11
 LOV,LOV,Lovisa Holdings Ltd,0
-LPD,LPD,Lepidico Ltd,5
+LPD,LPD,Lepidico Ltd,4
 LPDRC,LPDRC,Lepidico Ltd,0
 LPE,LPE,Locality Planning Energy Holdings Ltd,0
 LPI,LPI,Lithium Power International Ltd,0
@@ -1249,7 +1249,7 @@ MGE,MGE,Magellan Global Equities Fund (Managed Fund),0
 MGG,MGG,Magellan Global Trust,0
 MGL,MGL,Magontec Ltd,0
 MGR,MGR,Mirvac Group,0
-MGT,MGT,Magnetite Mines Ltd,2
+MGT,MGT,Magnetite Mines Ltd,0
 MGU,MGU,Magnum Mining and Exploration Ltd,0
 MGV,MGV,Musgrave Minerals Ltd,0
 MGX,MGX,Mount Gibson Iron Ltd,0
@@ -1263,7 +1263,7 @@ MHJ,MHJ,Michael Hill International Ltd,0
 MICH,MICH,Magellan Infrastructure Fund (Currency Hedged)(Managed Fund),0
 MIH,MIH,MNC Media Investment Ltd,0
 MIL,MIL,Millennium Services Group Ltd,0
-MIN,MIN,Mineral Resources Ltd,1
+MIN,MIN,Mineral Resources Ltd,0
 MIO,MIO,Macarthur Minerals Ltd,0
 MIR,MIR,Mirrabooka Investments Ltd,0
 MJC,MJC,Mejority Capital Ltd,0
@@ -1273,7 +1273,7 @@ MLL,MLL,Mali Lithium Ltd,0
 MLM,MLM,Metallica Minerals Ltd,0
 MLS,MLS,Metals Australia Ltd,0
 MLT,MLT,Milton Corporation Ltd,0
-MLX,MLX,Metals X Ltd,2
+MLX,MLX,Metals X Ltd,0
 MME,MME,Moneyme Ltd,0
 MMI,MMI,Metro Mining Ltd,0
 MMJ,MMJ,MMJ Group Holdings Ltd,0
@@ -1281,7 +1281,7 @@ MML,MML,Medusa Mining Ltd,0
 MMM,MMM,Marley Spoon AG,0
 MMR,MMR,Mec Resources Ltd,0
 MMS,MMS,Mcmillan Shakespeare Ltd,0
-MNB,MNB,Minbos Resources Ltd,2
+MNB,MNB,Minbos Resources Ltd,0
 MND,MND,Monadelphous Group Ltd,0
 MNF,MNF,MNF Group Ltd,0
 MNRS,MNRS,Betashares Global Gold Miners ETF - Currency Hedged,0
@@ -1357,7 +1357,7 @@ MYX,MYX,Mayne Pharma Group Ltd,0
 MZI,MZI,MZI Resources Ltd,0
 MZZ,MZZ,Matador Mining Ltd,0
 N1H,N1H,N1 Holdings Ltd,0
-NAB,NAB,National Australia Bank Ltd,2
+NAB,NAB,National Australia Bank Ltd,0
 NAC,NAC,Naos Ex-50 Opportunities Company Ltd,0
 NAE,NAE,New Age Exploration Ltd,0
 NAG,NAG,Nagambie Resources Ltd,0
@@ -1392,7 +1392,7 @@ NMT,NMT,Neometals Ltd,3
 NNT,NNT,99 Technology Ltd,0
 NOR,NOR,Norwood Systems Ltd,0
 NOV,NOV,Novatti Group Ltd,0
-NOX,NOX,Noxopharm Ltd,1
+NOX,NOX,Noxopharm Ltd,0
 NSB,NSB,Neuroscientific Biopharmaceuticals Ltd,0
 NSC,NSC,Naos Small Cap Opportunities Company Ltd,0
 NSE,NSE,New Standard Energy Ltd,0
@@ -1469,7 +1469,7 @@ OPL,OPL,Opyl Ltd,0
 OPT,OPT,Opthea Ltd,0
 OPY,OPY,Openpay Group Ltd,0
 ORA,ORA,Orora Ltd,0
-ORE,ORE,Orocobre Ltd,3
+ORE,ORE,Orocobre Ltd,2
 ORG,ORG,Origin Energy Ltd,0
 ORI,ORI,Orica Ltd,0
 ORM,ORM,Orion Metals Ltd,0
@@ -1496,7 +1496,7 @@ PAF,PAF,PM Capital Asian Opportunities Fund Ltd,0
 PAI,PAI,Platinum Asia Investments Ltd,0
 PAK,PAK,Pacific American Holdings Ltd,0
 PAL,PAL,Palla Pharma Ltd,0
-PAN,PAN,Panoramic Resources Ltd,3
+PAN,PAN,Panoramic Resources Ltd,2
 PAR,PAR,Paradigm Biopharmaceuticals Ltd,0
 PAXX,PAXX,Platinum Asia Fund (Quoted Managed Hedge Fund),0
 PBH,PBH,Pointsbet Holdings Ltd,0
@@ -1509,13 +1509,13 @@ PCK,PCK,Painchek Ltd,0
 PCL,PCL,Pancontinental Oil & Gas NL,0
 PDI,PDI,Predictive Discovery Ltd,0
 PDL,PDL,Pendal Group Ltd,0
-PDN,PDN,Paladin Energy Ltd,8
+PDN,PDN,Paladin Energy Ltd,6
 PDZ,PDZ,Prairie Mining Ltd,0
 PE1,PE1,Pengana Private Equity Trust,0
 PEC,PEC,Perpetual Resources Ltd,0
 PEK,PEK,Peak Resources Ltd,0
 PEL,PEL,Pelican Resources Ltd,0
-PEN,PEN,Peninsula Energy Ltd,34
+PEN,PEN,Peninsula Energy Ltd,23
 PET,PET,Phoslock Environmental Technologies Ltd,0
 PEX,PEX,Peel Mining Ltd,0
 PFG,PFG,Prime Financial Group Ltd,0
@@ -1544,8 +1544,8 @@ PKS,PKS,PKS Holdings Ltd,0
 PL8,PL8,Plato Income Maximiser Ltd,0
 PLC,PLC,PLC Financial Solutions Ltd,0
 PLL,PLL,Piedmont Lithium Ltd,0
-PLS,PLS,Pilbara Minerals Ltd,11
-PLUS,PLUS,Vaneck Vectors Australian Corporate Bond Plus ETF,1
+PLS,PLS,Pilbara Minerals Ltd,9
+PLUS,PLUS,Vaneck Vectors Australian Corporate Bond Plus ETF,0
 PLX,PLX,Pyrolyx AG,0
 PM1,PM1,Pure Minerals Ltd,0
 PM8,PM8,Pensana Rare EARTHS Plc,0
@@ -1564,7 +1564,7 @@ PNW,PNW,Pacific Star Network Ltd,0
 PNX,PNX,PNX Metals Ltd,0
 PO3,PO3,Purifloh Ltd,0
 POD,POD,Podium Minerals Ltd,0
-POS,POS,Poseidon Nickel Ltd,1
+POS,POS,Poseidon Nickel Ltd,0
 POU,POU,Betashares British Pound ETF,0
 POW,POW,Protean Energy Ltd,0
 PPC,PPC,Peet Ltd,0
@@ -1602,7 +1602,7 @@ PVS,PVS,Pivotal Systems Corporation,0
 PWG,PWG,Primewest,0
 PWH,PWH,PWR Holdings Ltd,0
 PWL,PWL,Powerwrap Ltd,0
-PWN,PWN,Parkway Minerals NL,3
+PWN,PWN,Parkway Minerals NL,1
 PWNCA,PWNCA,Parkway Minerals NL,0
 PXS,PXS,Pharmaxis Ltd,0
 PXX,PXX,Polarx Ltd,0
@@ -1637,7 +1637,7 @@ QUE,QUE,Queste Communications Ltd,0
 QUS,QUS,Betashares Ftse Rafi U.S. 1000 ETF,0
 QVE,QVE,QV Equities Ltd,0
 R3D,R3D,R3D Global Ltd,0
-RAC,RAC,Race Oncology Ltd,5
+RAC,RAC,Race Oncology Ltd,1
 RAG,RAG,Ragnar Metals Ltd,0
 RAN,RAN,Range International Ltd,0
 RAP,RAP,Resapp Health Ltd,0
@@ -1645,7 +1645,7 @@ RARI,RARI,Russell Investments Australian Responsible Investment ETF,0
 RBD,RBD,Restaurant Brands New Zealand Ltd,0
 RBL,RBL,Redbubble Ltd,0
 RBR,RBR,RBR Group Ltd,0
-RBTZ,RBTZ,Betashares Global Robotics and Artificial Intelligence ETF,3
+RBTZ,RBTZ,Betashares Global Robotics and Artificial Intelligence ETF,2
 RBX,RBX,Resource Base Ltd,0
 RCB,RCB,Russell Investments Australian Select Corporate Bond ETF,0
 RCE,RCE,Recce Pharmaceuticals Ltd,0
@@ -1665,7 +1665,7 @@ RDV,RDV,Russell Investments High Dividend Australian Shares ETF,0
 RDY,RDY,Readytech Holdings Ltd,0
 RE1,RE1,Resa Group Ltd,0
 REA,REA,REA Group Ltd,0
-RED,RED,RED 5 Ltd,1
+RED,RED,RED 5 Ltd,0
 REE,REE,RAREX Ltd,0
 REF,REF,Reverse Corp Ltd,0
 REG,REG,Regis Healthcare Ltd,0
@@ -1682,7 +1682,7 @@ RFF,RFF,Rural Funds Group,1
 RFG,RFG,Retail Food Group Ltd,0
 RFN,RFN,Reffind Ltd,0
 RFR,RFR,Rafaella Resources Ltd,0
-RFT,RFT,Rectifier Technologies Ltd,4
+RFT,RFT,Rectifier Technologies Ltd,0
 RFX,RFX,Redflow Ltd,0
 RGB,RGB,Russell Investments Australian Government Bond ETF,0
 RGI,RGI,Roto-Gro International Ltd,0
@@ -1702,7 +1702,7 @@ RKN,RKN,Reckon Ltd,0
 RLC,RLC,Reedy Lagoon Corporation Ltd,0
 RLE,RLE,Real Energy Corporation Ltd,0
 RLG,RLG,Roolife Group Ltd,0
-RLT,RLT,Renergen Ltd,3
+RLT,RLT,Renergen Ltd,2
 RMC,RMC,Resimac Group Ltd,0
 RMD,RMD,Resmed Inc,0
 RMG,RMG,RMG Ltd,0
@@ -1717,12 +1717,12 @@ RND,RND,Rand Mining Ltd,0
 RNE,RNE,Renu Energy Ltd,0
 RNO,RNO,Rhinomed Ltd,0
 RNT,RNT,Rent.com.Au Ltd,0
-RNU,RNU,Renascor Resources Ltd,12
+RNU,RNU,Renascor Resources Ltd,11
 RNX,RNX,Renegade Exploration Ltd,0
 RNY,RNY,RNY Property Trust,0
 ROBO,ROBO,ETFs Robo Global Robotics and Automation ETF,1
 ROG,ROG,Red Sky Energy Ltd,2
-ROO,ROO,Roots Sustainable Agricultural Technologies Ltd,1
+ROO,ROO,Roots Sustainable Agricultural Technologies Ltd,0
 RPG,RPG,Raptis Group Ltd,0
 RPM,RPM,RPM Automotive Group Ltd,0
 RRL,RRL,Regis Resources Ltd,0
@@ -1797,7 +1797,7 @@ SGO,SGO,Stream Group Ltd,0
 SGP,SGP,Stockland,0
 SGQ,SGQ,ST George Mining Ltd,0
 SGR,SGR,The Star Entertainment Group Ltd,0
-SHE,SHE,Stonehorse Energy Ltd,1
+SHE,SHE,Stonehorse Energy Ltd,0
 SHH,SHH,Shree Minerals Ltd,0
 SHJ,SHJ,Shine Justice Ltd,0
 SHK,SHK,Stone Resources Australia Ltd,0
@@ -1828,7 +1828,7 @@ SLF,SLF,SPDR S&P/ASX 200 Listed Property Fund,0
 SLK,SLK,Sealink Travel Group Ltd,0
 SLM,SLM,Salmat Ltd,0
 SLR,SLR,Silver Lake Resources Ltd,0
-SLX,SLX,SILEX Systems Ltd,3
+SLX,SLX,SILEX Systems Ltd,0
 SLZ,SLZ,Sultan Resources Ltd,0
 SM1,SM1,Synlait Milk Ltd,0
 SMC,SMC,Strategic Minerals Corporation NL,0
@@ -1853,7 +1853,7 @@ SP3,SP3,Spectur Ltd,0
 SPK,SPK,Spark New Zealand Ltd,0
 SPL,SPL,Starpharma Holdings Ltd,0
 SPQ,SPQ,Superior Resources Ltd,0
-SPT,SPT,Splitit Payments Ltd,1
+SPT,SPT,Splitit Payments Ltd,0
 SPX,SPX,Spectrum Metals Ltd,0
 SPY,SPY,SPDR S&P 500 ETF Trust,0
 SPZ,SPZ,Smart Parking Ltd,0
@@ -1904,7 +1904,7 @@ SXE,SXE,Southern Cross Electrical Engineering Ltd,0
 SXL,SXL,Southern Cross Media Group Ltd,0
 SXX,SXX,Southern Cross Exploration N.L.,0
 SXY,SXY,SENEX Energy Ltd,0
-SYA,SYA,Sayona Mining Ltd,20
+SYA,SYA,Sayona Mining Ltd,12
 SYD,SYD,Sydney Airport,0
 SYI,SYI,SPDR MSCI Australia Select High Dividend Yield Fund,0
 SYR,SYR,Syrah Resources Ltd,0
@@ -1966,20 +1966,20 @@ TMT,TMT,Technology Metals Australia Ltd,3
 TMX,TMX,Terrain Minerals Ltd,0
 TMZ,TMZ,Thomson Resources Ltd,0
 TNE,TNE,Technology One Ltd,0
-TNG,TNG,TNG Ltd,1
+TNG,TNG,TNG Ltd,0
 TNK,TNK,Think Childcare Group,0
 TNP,TNP,Triple Energy Ltd,0
 TNR,TNR,Torian Resources Ltd,0
 TNT,TNT,Tesserent Ltd,0
 TNY,TNY,Tinybeans Group Ltd,0
-TOE,TOE,Toro Energy Ltd,2
+TOE,TOE,Toro Energy Ltd,1
 TOM,TOM,Tomizone Ltd,0
 TON,TON,Triton Minerals Ltd,0
 TOP,TOP,Thorney Opportunities Ltd,0
 TOT,TOT,360 Capital REIT,0
 TOU,TOU,Tlou Energy Ltd,0
 TPC,TPC,TPC Consolidated Ltd,0
-TPD,TPD,Talon Petroleum Ltd,2
+TPD,TPD,Talon Petroleum Ltd,1
 TPM,TPM,TPG Telecom Ltd,0
 TPO,TPO,Tian Poh Resources Ltd,0
 TPP,TPP,Tempo Australia Ltd,0
@@ -2048,7 +2048,7 @@ VCX,VCX,Vicinity Centres,0
 VDBA,VDBA,Vanguard Diversified Balanced INDEX ETF,0
 VDCO,VDCO,Vanguard Diversified Conservative INDEX ETF,0
 VDGR,VDGR,Vanguard Diversified Growth INDEX ETF,0
-VDHG,VDHG,Vanguard Diversified High Growth INDEX ETF,4
+VDHG,VDHG,Vanguard Diversified High Growth INDEX ETF,3
 VEA,VEA,Viva Energy Group Ltd,0
 VEC,VEC,Vector Resources Ltd,0
 VEE,VEE,Veem Ltd,0
@@ -2083,21 +2083,21 @@ VLT,VLT,Vault Intelligence Ltd,0
 VMC,VMC,Venus Metals Corporation Ltd,0
 VMG,VMG,VDM Group Ltd,0
 VMIN,VMIN,Vanguard Global Minimum Volatility Active ETF (Managed Fund),0
-VML,VML,Vital Metals Ltd,15
+VML,VML,Vital Metals Ltd,13
 VMS,VMS,Venture Minerals Ltd,0
 VMT,VMT,Vmoto Ltd,0
 VMX,VMX,Valmec Ltd,0
-VMY,VMY,Vimy Resources Ltd,2
+VMY,VMY,Vimy Resources Ltd,0
 VN8,VN8,VONEX Ltd,0
 VOC,VOC,Vocus Group Ltd,0
-VOL,VOL,Victory Offices Ltd,1
+VOL,VOL,Victory Offices Ltd,0
 VOR,VOR,Vortiv Ltd,0
 VP7,VP7,Velocity Property Group Ltd,0
 VPC,VPC,VPCL Ltd,0
 VPR,VPR,Volt Power Group Ltd,0
 VR1,VR1,Vection Technologies Ltd,0
 VR8,VR8,Vanadium Resources Ltd,2
-VRC,VRC,Volt Resources Ltd,3
+VRC,VRC,Volt Resources Ltd,2
 VRL,VRL,Village Roadshow Ltd,0
 VRS,VRS,Veris Ltd,0
 VRT,VRT,Virtus Health Ltd,0
@@ -2108,7 +2108,7 @@ VTH,VTH,Vitalharvest Freehold Trust,0
 VTI,VTI,"Visioneering Technologies, Inc",0
 VTS,VTS,Vanguard US Total Market Shares INDEX ETF,0
 VUK,VUK,Virgin Money Uk Plc,0
-VUL,VUL,Vulcan Energy Resources Ltd,3
+VUL,VUL,Vulcan Energy Resources Ltd,1
 VVA,VVA,Viva Leisure Ltd,0
 VVLU,VVLU,Vanguard Global Value Equity Active ETF (Managed Fund),0
 VVR,VVR,Viva Energy REIT,0
@@ -2137,7 +2137,7 @@ WGN,WGN,Wagners Holding Company Ltd,0
 WGO,WGO,Warrego Energy Ltd,0
 WGX,WGX,Westgold Resources Ltd,0
 WHA,WHA,Wattle Health Australia Ltd,0
-WHC,WHC,Whitehaven Coal Ltd,1
+WHC,WHC,Whitehaven Coal Ltd,0
 WHF,WHF,Whitefield Ltd,0
 WHFPA,WHFPA,Whitefield Ltd,0
 WHK,WHK,Whitehawk Ltd,0
@@ -2157,7 +2157,7 @@ WNS,WNS,World.Net Services Ltd,0
 WOA,WOA,Wide Open Agriculture Ltd,0
 WOR,WOR,Worley Ltd,0
 WOW,WOW,Woolworths Group Ltd,0
-WPL,WPL,Woodside Petroleum Ltd,3
+WPL,WPL,Woodside Petroleum Ltd,0
 WPP,WPP,WPP AUNZ Ltd,0
 WQG,WQG,WCM Global Growth Ltd,0
 WRLD,WRLD,Betashares Managed Risk Global Share Fund (Managed Fund),0
@@ -2182,7 +2182,7 @@ XPE,XPE,Xped Ltd,0
 XPL,XPL,Xplore Wealth Ltd,0
 XRF,XRF,XRF Scientific Ltd,0
 XRO,XRO,Xero Ltd,0
-XST,XST,Xstate Resources Ltd,3
+XST,XST,Xstate Resources Ltd,2
 XTC,XTC,Xantippe Resources Ltd,0
 XTD,XTD,XTD Ltd,0
 XTE,XTE,Xtek Ltd,0
@@ -2194,7 +2194,7 @@ YOJ,YOJ,Yojee Ltd,0
 YOW,YOW,Yowie Group Ltd,0
 YPB,YPB,YPB Group Ltd,0
 YRL,YRL,Yandal Resources Ltd,0
-Z1P,Z1P,ZIP Co Ltd,3
+Z1P,Z1P,ZIP Co Ltd,2
 Z3RO,Z3RO,Pinnacle Ashares Dynamic Cash Fund (Managed Fund),0
 ZEL,ZEL,Z Energy Ltd,0
 ZEN,ZEN,Zenith Energy Ltd,0
@@ -2202,7 +2202,7 @@ ZER,ZER,ZETA Resources Ltd,0
 ZEU,ZEU,ZEUS Resources Ltd,0
 ZGL,ZGL,ZICOM Group Ltd,0
 ZIM,ZIM,Zimplats Holdings Ltd,1
-ZIP,ZIP,Ziptel Ltd,4
+ZIP,ZIP,Ziptel Ltd,3
 ZLD,ZLD,Zelira Therapeutics Ltd,0
 ZMI,ZMI,ZINC of Ireland NL,0
 ZMICA,ZMICA,ZINC of Ireland NL,0

@@ -3,7 +3,6 @@ Created on Thu Aug 19 10:12:25 2021
 @author: clayh
 """
 import praw
-import matplotlib as plt
 import pandas as pd
 import datetime as dt
 import string
@@ -13,10 +12,12 @@ from psaw import PushshiftAPI
 
 def main() -> None:
     """Starts the program and will contain test code. """
-    list_update = True
-    if list_update:
+    listUpdate = input('What dates do you want to scrape? ')
+    
+    listUpdate = False
+    if listUpdate:
         date1, date2 = (dt.date(2021, 9, 13), dt.date(2021, 9, 15))
-        asx_df_dict = date_ticker_counter(date1, date2)
+        asx_df_dict = dateTickerCounter(date1, date2)
         export_counter(asx_df_dict)
         summary_asx_df = summary_asx_data(asx_df_dict)
         export_df_summary(summary_asx_df, date1, date2)
@@ -40,7 +41,7 @@ def reddit():
                          check_for_async = False)
     return reddit
 
-def submission_id_list(start_date: dt.date, end_date = dt.date.today()) -> list:
+def submissionIdList(start_date: dt.date, end_date = dt.date.today()) -> list:
     """Takes a start date, returns all the needed post ids from the pre-market,
     daily discussion and weekend discussion from the reddit automoderator who 
     posts them on ASX_bets after this date. First creates a generator object
@@ -64,7 +65,7 @@ def submission_id_list(start_date: dt.date, end_date = dt.date.today()) -> list:
     submission_ids = api.search_submissions(after = start_epoch, 
                                  before = end_epoch,
                                  subreddit = 'asx_bets',
-                                 #author = 'AutoModerator',
+                                 author = 'AutoModerator',
                                  limit=1000)
     for i in submission_ids:
         submission_list.append(i)
@@ -77,7 +78,8 @@ def comment_scrape(post_id: str) -> list:
     comment_list = []
     submission = reddit().submission(id=post_id)
     submission.comments.replace_more(limit=0) #replace_more method means that 
-                                              #all top level comments are accessed
+                                              #all top level comments are 
+                                              #accessed
     for comment in submission.comments.list(): #list method takes lower level 
                                                #comments as well
         comment_list.append(comment.body)
@@ -92,7 +94,8 @@ def ticker_mention_counter(submission_ids: list) -> pd.DataFrame:
         cmts = comment_scrape(submission)
         for comment in cmts:
             #strips out all punctuation
-            fixed_cmt = comment.translate(str.maketrans('', '', string.punctuation)) 
+            fixed_cmt = comment.translate(
+                str.maketrans('', '', string.punctuation)) 
             for word in fixed_cmt.split(): 
                 #checks not in banned list first as that is shorter list and 
                 #python is lazy
@@ -101,7 +104,7 @@ def ticker_mention_counter(submission_ids: list) -> pd.DataFrame:
                     asx_df.loc[word, 'Count'] += 1
     return asx_df
 
-def date_ticker_counter(start_date: dt.date, end_date = dt.date.today()) -> dict:
+def dateTickerCounter(start_date: dt.date, end_date = dt.date.today()) -> dict:
     """Takes a start and end date, creates an iterable list of dates inclusive 
     of start and end date. Uses this to generate a dataframe of ticker mentions
     for each particular date in the list of dates. Returns this as a dict"""
@@ -111,16 +114,16 @@ def date_ticker_counter(start_date: dt.date, end_date = dt.date.today()) -> dict
     delta = dt.timedelta(days=1)
     while sd <= ed:
         #By checking from start date to start date we check only on that date
-        submissions_on_date = submission_id_list(sd, sd) 
+        submissions_on_date = submissionIdList(sd, sd) 
         asx_df = ticker_mention_counter(submissions_on_date)
         asx_df_dict[sd] = asx_df
         sd += delta
     return asx_df_dict
 
 def summary_asx_data(asx_df_dict: dict) -> pd.DataFrame:
-    """Takes a dictionary of dates vs asx ticker count dataframes from that day. 
-    Returns a single dataframe that contains every ticker and the number of 
-    mentions on each date"""
+    """Takes a dictionary of dates vs asx ticker count dataframes from that 
+    day. Returns a single dataframe that contains every ticker and the number 
+    of mentions on each date"""
     data_list = []
     dataframe_length = len(asx_companies().index)
     row_dates = asx_df_dict.keys()
@@ -132,7 +135,9 @@ def summary_asx_data(asx_df_dict: dict) -> pd.DataFrame:
             value_list.append(asx_df.iat[count, 2])
             count += 1
         data_list.append(value_list)
-    summary_asx_df = pd.DataFrame(data_list, index = row_dates, columns = tickers)
+    summary_asx_df = pd.DataFrame(data_list, 
+                                    index = row_dates, 
+                                    columns = tickers)
     return summary_asx_df
 
 if __name__ == '__main__':
